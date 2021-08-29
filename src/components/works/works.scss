@@ -1,0 +1,61 @@
+.works{
+    background-color: crimson;
+    display: flex;
+    align-items: center;
+
+    .wrapper{
+        width: 100vw;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+
+        .lArrow{
+            .MuiSvgIcon-root{
+                position: absolute;
+                top: 175px;
+                left: 80px;
+                transform: scale(2);
+                color: white;
+
+
+            }
+
+        }
+
+        .rArrow{
+            .MuiSvgIcon-root{
+                position: absolute;
+                top: 175px;
+                right: 80px;
+                transform: scale(2);
+                color: white;
+
+
+            }
+
+        }
+
+    
+
+        .slider{
+            height: 100%;
+            width: 60%;
+            background-color: white;
+            border-radius: 10px;
+            display: flex;
+            
+
+            
+                
+
+                .left{
+                    flex: 4;
+                    margin: 50px 10px;
+
+                    .MuiSvgIcon-root{
+                        transform: scale(1.2);
+                        margin: 2px;
+                        background-color: crimson;
+             
