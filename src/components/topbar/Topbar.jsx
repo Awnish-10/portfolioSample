@@ -6,7 +6,7 @@ export default function Topbar(props){
         <div className={"topbar " + (props.menu && "active")} >
             <div className="wrapper">
             <div className="left">
-                <a href="#intro" className="logo">intro</a>
+                <a href="#intro" className="logo">.Portfolio</a>
                 <div className="itemContainer">
                     <Person className="icon"/>
                     <span>+91 987654321</span>

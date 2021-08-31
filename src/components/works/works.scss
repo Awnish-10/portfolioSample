@@ -1,3 +1,5 @@
+@import "../../global.scss";
+
 .works{
     background-color: crimson;
     display: flex;
@@ -6,16 +8,21 @@
     position: relative;
 
     .lArrow{
+        
         cursor: pointer;
         .MuiSvgIcon-root{
             position: absolute;
             left: 80px;
             transform: scale(2);
             color: white;
-            
+            @include mobile{
+                display: none;
+            }
 
 
         }
+
+        
 
     }
 
@@ -26,8 +33,11 @@
             transform: scale(2);
             color: white;
             cursor: pointer;
-
+            @include mobile{
+                display: none;
+            }
         }
+       
 
     }
 
@@ -38,7 +48,13 @@
         align-items: center;
         position: absolute;
         transition: all 1s ease;
-       
+        @include mobile{
+            flex-direction: column;
+            justify-content: center;
+            height: 80vh;
+            
+        }
+     
     
 
         .slider{
@@ -46,7 +62,8 @@
             width: 100vw;
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: space-around;
+           
 
 
 
@@ -60,6 +77,10 @@
                 align-items: center;
                 justify-content: center;
                 overflow-y: hidden;
+                @include mobile{
+                    height: 80%;
+                    margin: 20px 0;
+                }
                 
     
                 
@@ -81,12 +102,18 @@
                             font-weight: 500;
                             margin-top: 10px;
                             margin-bottom: 20px;
+                            @include mobile{
+                                font-size: 15px;
+                            }
     
                         }
                         p{
                             font-size: 14px;
                             font-weight: 400;
                             word-spacing: .2rem;
+                            @include mobile{
+                                display: none;
+                            }
     
                         }
                         h3{
@@ -95,6 +122,9 @@
                             text-decoration: underline;
                             margin-top: 20px;
                             cursor: pointer;
+                            @include mobile{
+                                font-size: 12px;
+                            }
     
                         }
                     }

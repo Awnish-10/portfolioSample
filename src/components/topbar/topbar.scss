@@ -7,7 +7,7 @@
     color:$mainColor ;
     position: fixed;
     top: 0;
-    z-index: 2;//top bar stay fixed at top
+    z-index: 3;//top bar stay fixed at top
     transition: all 1s ease;
     .wrapper{
         padding: 10px 30px;
@@ -26,6 +26,9 @@
  
             }
             .itemContainer{
+                @include mobile{
+                    display: none;
+                }
                 margin-left: 30px;
 
                 .icon{

@@ -79,6 +79,11 @@ export const Hobbies = [
         id: 4,
         title: "Gamming",
         img: "https://razorpay.com/blog-content/uploads/2020/05/Feature-Image.png"
+    },
+    {
+        id: 5,
+        title: "GYM",
+        img: "https://images.unsplash.com/photo-1558611848-73f7eb4001a1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGd5bXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
     }
 ];
 
